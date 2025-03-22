@@ -7,7 +7,7 @@
   }
   
   header {
-    background-color: #4c6ef5;
+    background-color: #272c3f;
     color: white;
     padding: 20px;
     text-align: center;
@@ -17,7 +17,7 @@
   nav button {
     margin: 0 10px;
     padding: 8px 16px;
-    background-color: #3b5bdb;
+    background-color: #525975;
     color: white;
     border: none;
     border-radius: 4px;
@@ -470,4 +470,176 @@
     margin-top: 10px;
     font-weight: bold;
   }
-  
+  .experience-section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 900px;
+}
+
+.experience-section h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.experience-list {
+    position: relative;
+    padding-left: 40px;
+    list-style: none;
+}
+
+.experience-list::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #3f51b5;
+}
+
+.experience-list li {
+    position: relative;
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.experience-list li:hover {
+    transform: translateY(-5px);
+}
+
+.experience-list li::before {
+    content: '';
+    position: absolute;
+    left: -29px;
+    top: 20px;
+    width: 15px;
+    height: 15px;
+    background-color: #3f51b5;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #ffffff;
+}
+
+.experience-list h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #3f51b5;
+}
+
+.experience-list p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.experience-list span {
+    font-size: 13px;
+    color: #999;
+}
+.education-section {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.education-section h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.education-details h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.education-details p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.education-details h3 {
+  color: #555;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.education-details ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.education-details ul li {
+  margin-bottom: 8px;
+  color: #444;
+}
+.education-section {
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.education-section h2 {
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.education-card {
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  background-color: #f9f9f9;
+  margin-bottom: 15px;
+}
+
+.education-card h4 {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.education-card p {
+  font-size: 16px;
+  color: #666;
+}
+
+.certifications h3 {
+  font-size: 19px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.certifications ul {
+  padding-left: 20px;
+}
+
+.certifications li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+  list-style: disc;
+}

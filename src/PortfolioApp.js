@@ -272,23 +272,28 @@ const PortfolioApp = () => {
   <section className="education-section">
     <h2>Education & Certifications</h2>
     <div className="education-details">
-      <h4>Bachelor of Technology in Electrical & Electronics Engineering (Distance Education)</h4>
-      <p>JNT University, 2006 - 2014</p>
+      {education.map((edu, index) => (
+        <div key={index} className="education-card">
+          <h4>{edu.degree}</h4>
+          <p>{edu.institution}, {edu.period}</p>
+        </div>
+      ))}
 
-      <h4>Diploma in Electrical & Electronics Engineering</h4>
-      <p>M.B.T.S Govt Polytechnic College, 1999 - 2002</p>
-
-      <h3>Professional Certifications</h3>
-      <ul>
-        <li>Do It Yourself Geo Apps</li>
-        <li>Earth Imagery at Work</li>
-        <li>Going Places with Spatial Analysis</li>
-        <li>Cartography</li>
-        <li>Spatial Data Science: The New Frontier in Analytics</li>
-      </ul>
+      <div className="certifications">
+        <h3>Professional Certifications</h3>
+        <ul>
+          <li>Do It Yourself Geo Apps</li>
+          <li>Earth Imagery at Work</li>
+          <li>Going Places with Spatial Analysis</li>
+          <li>Cartography</li>
+          <li>Spatial Data Science: The New Frontier in Analytics</li>
+        </ul>
+      </div>
     </div>
   </section>
 )}
+
+
 {/* {activeSection === 'portfolio' && (
   <section className="portfolio-section">
     <h2>Portfolio Highlights</h2>
