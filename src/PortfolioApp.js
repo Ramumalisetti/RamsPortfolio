@@ -13,9 +13,12 @@ const PortfolioApp = () => {
     name: "VENKATA RAMA RAO MALISETTI",
     title: "Tech Lead (Data) | GIS Specialist & Senior GIS Analyst",
     email: "ramu.malisetti@gmail.com",
-    linkedin: "Venkata Rama Rao Malisetti",
-    mobile: "+966503949027",
+    linkedin: {
+      url: "https://www.linkedin.com/in/venkata-rama-rao-malisetti-26a27036",
+      display: "Venkata Rama Rao Malisetti"
+    }
   };
+  
 
   const careerObjective = {
     experience: "Over 18 years in geospatial analysis and GIS automation",
@@ -85,7 +88,7 @@ const PortfolioApp = () => {
   return (
     <div className="portfolio-container">
       <header>
-        <h1>{personalInfo.name}</h1>
+        <h1>GIS Specialist & Tech Lead Portfolio</h1>
         <nav>
           {['home', 'skills', 'experience', 'education', 'portfolio'].map(section => (
             <button
@@ -143,12 +146,14 @@ const PortfolioApp = () => {
       src={`${process.env.PUBLIC_URL}/Images/Profile.jpg`} 
       alt="Profile"
     />
-    <div className="personal-info">
-      <h2>{personalInfo.name}</h2>
-      <p className="job-title">{personalInfo.title}</p>
-      <p><strong>Email:</strong> {personalInfo.email}</p>
-      <p><strong>LinkedIn:</strong> {personalInfo.linkedin}</p>
-      <p><strong>Mobile:</strong> {personalInfo.mobile}</p>
+    <div className="profile-info">
+    <h1>VENKATA RAMA RAO MALISETTI</h1>
+    <h3>Tech Lead (Data) | GIS Specialist & Senior GIS Analyst</h3>
+      <div className="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:ramu.malisetti@gmail.com">ramu.malisetti@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/venkata-rama-rao-malisetti-26a27036" target="_blank" rel="noopener noreferrer">Venkata Rama Rao Malisetti</a></p>
+    </div>
+      
     </div>
   </div>
 
