@@ -214,9 +214,9 @@ const PortfolioApp = () => {
 
           {isOpen && (
             <Lightbox
-              mainSrc={`${process.env.PUBLIC_URL}/images/${portfolioItems[photoIndex].img}`}
-              nextSrc={`${process.env.PUBLIC_URL}/images/${portfolioItems[(photoIndex + 1) % portfolioItems.length].img}`}
-              prevSrc={`${process.env.PUBLIC_URL}/images/${portfolioItems[(photoIndex + portfolioItems.length - 1) % portfolioItems.length].img}`}
+              mainSrc={`${process.env.PUBLIC_URL}/Images/${portfolioItems[photoIndex].img}`}
+              nextSrc={`${process.env.PUBLIC_URL}/Images/${portfolioItems[(photoIndex + 1) % portfolioItems.length].img}`}
+              prevSrc={`${process.env.PUBLIC_URL}/Images/${portfolioItems[(photoIndex + portfolioItems.length - 1) % portfolioItems.length].img}`}
               onCloseRequest={() => setIsOpen(false)}
               onMovePrevRequest={() =>
                 setPhotoIndex((photoIndex + portfolioItems.length - 1) % portfolioItems.length)}
