@@ -71,7 +71,7 @@ const PortfolioApp = () => {
           <div className="profile-card">
           <img 
         className="profile-image" 
-        src={`${process.env.PUBLIC_URL}/images/profile.jpg`} 
+        src={`${process.env.PUBLIC_URL}/Images/Profile.jpg`} 
         alt="Profile" 
       />
             <h2>{personalInfo.name}</h2>
@@ -170,7 +170,7 @@ const PortfolioApp = () => {
         { title: "Geo AI - Building Extraction", img: "GeoAI-Building-Extraction.jpg" }
       ].map((item, index) => (
         <div key={index} className="portfolio-card">
-        <img src={`${process.env.PUBLIC_URL}/images/${item.img}`} alt={item.title} />
+        <img src={`${process.env.PUBLIC_URL}/Images/${item.img}`} alt={item.title} />
         <h4>{item.title}</h4>
       </div>
       ))}
