@@ -1,8 +1,6 @@
 {
-  "name": "ramsportfolio",
-  "version": "1.0.0",
-  "private": true,
-  "homepage": "https://Ramumalisetti.github.io/RamsPortfolio",
+  
+  "homepage": "https://ramumalisetti.github.io/RamsPortfolio/",
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
@@ -11,6 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
