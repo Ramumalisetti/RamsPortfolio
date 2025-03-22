@@ -691,3 +691,39 @@
 .contact-info a:hover {
   text-decoration: underline;
 }
+/* Hover effect for Career Objective items */
+.career-projects-container .objective-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.career-projects-container .objective-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Hover effect for Featured Projects */
+.featured-projects ul li {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.featured-projects ul li:hover {
+  transform: translateX(8px);
+  color: #0056b3;
+}
+.profile-container {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.profile-image {
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+}
