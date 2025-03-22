@@ -1,5 +1,4 @@
 {
-  
   "homepage": "https://ramumalisetti.github.io/RamsPortfolio/",
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
@@ -9,18 +8,13 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"
   },
   "devDependencies": {
-    "@tailwindcss/cli": "^4.0.15",
-    "autoprefixer": "^10.4.21",
-    "gh-pages": "^6.3.0",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^4.0.15"
+    "gh-pages": "^6.3.0"
   },
   "browserslist": {
     "production": [
