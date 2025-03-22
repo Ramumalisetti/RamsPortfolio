@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import './PortfolioApp.css';
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css';
 
 const PortfolioApp = () => {
+ 
   const [activeSection, setActiveSection] = useState('home');
+  const [isOpen, setIsOpen] = useState(false);
+  const [photoIndex, setPhotoIndex] = useState(0) 
 
   const personalInfo = {
     name: "VENKATA RAMA RAO MALISETTI",
@@ -48,6 +53,20 @@ const PortfolioApp = () => {
     { degree: "Bachelor of Technology in Electrical & Electronics Engineering (Distance Education)", institution: "JNT University", period: "2006 - 2014" },
     { degree: "Diploma in Electrical & Electronics Engineering", institution: "M.B.T.S Govt Polytechnic College", period: "1999 - 2002" }
   ];
+  const portfolioItems = [
+    { title: "Experience Builder - Dashboard", img: "Experience-Builder-Dashboard.jpg" },
+    { title: "3D Data - Publish Revit Data capture", img: "3D-Data-Revit.jpg" },
+    { title: "Road Network and Utility Network data", img: "Road-Network-Utility.jpg" },
+    { title: "CAD – GIS Migration", img: "CAD-GIS-Migration.jpg" },
+    { title: "Network Analyst – Find the nearest Facility", img: "Network-Analyst.jpg" },
+    { title: "ArcGIS Dashboard", img: "ArcGIS-Dashboard.jpg" },
+    { title: "ArcGIS Insights", img: "ArcGIS-Insights.jpg" },
+    { title: "Map Services Publish & Geoprocessing Tools Publish", img: "Map-Services.jpg" },
+    { title: "FME Workbench creation", img: "FME-Workbench.jpg" },
+    { title: "Python using AI", img: "Python-AI.jpg" },
+    { title: "Geo AI - Building Extraction", img: "GeoAI-Building-Extraction.jpg" }
+  ];
+
 
   return (
     <div className="portfolio-container">
@@ -152,7 +171,7 @@ const PortfolioApp = () => {
     </div>
   </section>
 )}
-{activeSection === 'portfolio' && (
+{/* {activeSection === 'portfolio' && (
   <section className="portfolio-section">
     <h2>Portfolio Highlights</h2>
     <div className="portfolio-grid">
@@ -176,8 +195,37 @@ const PortfolioApp = () => {
       ))}
     </div>
   </section>
-)}
+)} */}
+{activeSection === 'portfolio' && (
+        <section className="portfolio-section">
+          <h2>Portfolio Highlights</h2>
+          <div className="portfolio-grid">
+            {portfolioItems.map((item, index) => (
+              <div
+                key={index}
+                className="portfolio-card"
+                onClick={() => { setPhotoIndex(index); setIsOpen(true); }}
+              >
+                <img src={`${process.env.PUBLIC_URL}/images/${item.img}`} alt={item.title} />
+                <h4>{item.title}</h4>
+              </div>
+            ))}
+          </div>
 
+          {isOpen && (
+            <Lightbox
+              mainSrc={`${process.env.PUBLIC_URL}/images/${portfolioItems[photoIndex].img}`}
+              nextSrc={`${process.env.PUBLIC_URL}/images/${portfolioItems[(photoIndex + 1) % portfolioItems.length].img}`}
+              prevSrc={`${process.env.PUBLIC_URL}/images/${portfolioItems[(photoIndex + portfolioItems.length - 1) % portfolioItems.length].img}`}
+              onCloseRequest={() => setIsOpen(false)}
+              onMovePrevRequest={() =>
+                setPhotoIndex((photoIndex + portfolioItems.length - 1) % portfolioItems.length)}
+              onMoveNextRequest={() =>
+                setPhotoIndex((photoIndex + 1) % portfolioItems.length)}
+            />
+          )}
+        </section>
+      )}
 
 
       <footer>
