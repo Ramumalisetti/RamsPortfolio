@@ -206,7 +206,7 @@ const PortfolioApp = () => {
                 className="portfolio-card"
                 onClick={() => { setPhotoIndex(index); setIsOpen(true); }}
               >
-                <img src={`${process.env.PUBLIC_URL}/images/${item.img}`} alt={item.title} />
+                <img src={`${process.env.PUBLIC_URL}/Images/${item.img}`} alt={item.title} />
                 <h4>{item.title}</h4>
               </div>
             ))}
