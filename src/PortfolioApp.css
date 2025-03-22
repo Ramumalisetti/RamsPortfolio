@@ -129,4 +129,345 @@
     background-color: rgba(255,255,255,0.9);
     margin: 0;
   }
+  .skills-section {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+  }
+  
+  .skills-category {
+    margin-bottom: 20px;
+  }
+  
+  .skills-category h3 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .tag {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.85em;
+    color: #333;
+  }
+  
+  .tag.gis {
+    background-color: #d6e4ff;
+  }
+  
+  .tag.programming {
+    background-color: #d9f7be;
+  }
+  
+  .tag.geoai {
+    background-color: #efdbff;
+  }
+  
+  .tag.utility {
+    background-color: #fff7e6;
+  }
+  
+  .tag.database {
+    background-color: #ffd6e7;
+  }
+  
+  .certifications h3 {
+    margin-top: 25px;
+    color: #333;
+  }
+  
+  .certifications ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .certifications li {
+    padding: 3px 0;
+  }
+  .home-section {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-card {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #eaeaea;
+  }
+  
+  .profile-card h2 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .profile-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .profile-info {
+    text-align: left;
+    margin-top: 15px;
+    display: inline-block;
+  }
+  
+  .profile-info p {
+    margin: 5px 0;
+  }
+  
+  .career-objective {
+    margin-top: 30px;
+  }
+  
+  .career-objective h3 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .objective-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .objective-card {
+    background-color: #f7fbff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-left: 5px solid #609fff;
+  }
+  
+  .objective-card.experience { border-color: #609fff; }
+  .objective-card.expertise { border-color: #54d688; }
+  .objective-card.goal { border-color: #609fff; }
+  .objective-card.problem-solving { border-color: #2e5aac; }
+  
+  .objective-card strong {
+    color: #333;
+  }
+  
+  .featured-projects {
+    margin-top: 30px;
+  }
+  
+  .featured-projects h3 {
+    margin-bottom: 15px;
+  }
+  
+  .featured-projects ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .featured-projects li {
+    background-color: #f8f9fa;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .featured-projects button {
+    background: none;
+    border: none;
+    color: #609fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .featured-projects button {
+    background-color: transparent;
+    border: none;
+    color: #609fff;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .featured-projects button:hover {
+    color: #0067d7;
+  }
+  
+  .home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  
+  .profile-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+  }
+  
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .profile-details h2 {
+    margin-bottom: 8px;
+    font-size: 26px;
+    color: #333;
+  }
+  
+  .profile-details .title {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .contact-details p {
+    margin: 4px 0;
+    font-size: 16px;
+    color: #444;
+  }
+  
+  .contact-details p strong {
+    color: #333;
+  }
+  .home-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .profile-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+  }
+  
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .personal-info h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+  
+  .personal-info .job-title {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .personal-info p {
+    margin: 4px 0;
+    font-size: 15px;
+  }
+  
+  .career-projects-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .career-objective, .featured-projects {
+    flex: 1;
+  }
+  
+  .objective-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .objective-item {
+    background-color: #f0f7ff;
+    padding: 10px;
+    border-left: 5px solid;
+    border-radius: 4px;
+  }
+  
+  .experience {
+    border-color: #4b83f3;
+  }
+  .expertise {
+    border-color: #42c296;
+  }
+  .goal {
+    border-color: #4b83f3;
+  }
+  .problem-solving {
+    border-color: #42c296;
+  }
+  
+  .objective-item h4 {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  
+  .featured-projects ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .featured-projects li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #f7f7f7;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+  
+  .featured-projects button {
+    border: none;
+    background: none;
+    color: #4b83f3;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 10px;
+    font-weight: bold;
+  }
   

@@ -24,15 +24,29 @@ const PortfolioApp = () => {
     problemSolving: "Advanced analytical thinking and innovative approaches to complex spatial challenges"
   };
 
+  // const projects = [
+  //   "MPDA (Makkah Province Development Authority, Saudi Arabia)",
+  //   "ZATCA (Zakat, Tax, and Customs Authority, Saudi Arabia)",
+  //   "Ministry of Tourism (Saudi Arabia)",
+  //   "e-Pass (Department of Municipalities and Transport, Abu Dhabi)",
+  //   "UMIS (Urban Management Information System, Afghanistan)",
+  //   "MAF (Majid Al Futtaim)"
+  // ];
+  const [showAllProjects, setShowAllProjects] = useState(false);
+
   const projects = [
     "MPDA (Makkah Province Development Authority, Saudi Arabia)",
     "ZATCA (Zakat, Tax, and Customs Authority, Saudi Arabia)",
     "Ministry of Tourism (Saudi Arabia)",
     "e-Pass (Department of Municipalities and Transport, Abu Dhabi)",
     "UMIS (Urban Management Information System, Afghanistan)",
-    "MAF (Majid Al Futtaim)"
+    "MAF (Majid Al Futtaim)",
+    "Al HosnGas (Al HosnGas, Abu Dhabi)",
+    "MJEC (Majan Electricity Company Muscat, Oman)",
+    "SoCal Gas (Southern California Gas Company, US)",
+    "PEPCO (Potomac Electric Power Company, US)"
   ];
-
+  
   const skills = {
     gisTools: ["ArcGIS Pro", "Enterprise", "Online", "Model Builder", "Revit", "FME", "AutoCAD", "ArcFM", "BIM", "QGIS", "Power-BI", "SQL Queries"],
     programming: ["Python for GIS automation", "geoprocessing", "data analysis", "workflow optimization"],
@@ -85,7 +99,7 @@ const PortfolioApp = () => {
         </nav>
       </header>
 
-      {activeSection === 'home' && (
+      {/* {activeSection === 'home' && (
         <section className="home-section">
           <div className="profile-card">
           <img 
@@ -120,9 +134,62 @@ const PortfolioApp = () => {
             <button onClick={() => setActiveSection('portfolio')}>View all projects →</button>
           </div>
         </section>
-      )}
+      )} */}
+{activeSection === 'home' && (
+  <section className="home-section">
+  <div className="profile-container">
+    <img 
+      className="profile-img" 
+      src={`${process.env.PUBLIC_URL}/Images/Profile.jpg`} 
+      alt="Profile"
+    />
+    <div className="personal-info">
+      <h2>{personalInfo.name}</h2>
+      <p className="job-title">{personalInfo.title}</p>
+      <p><strong>Email:</strong> {personalInfo.email}</p>
+      <p><strong>LinkedIn:</strong> {personalInfo.linkedin}</p>
+      <p><strong>Mobile:</strong> {personalInfo.mobile}</p>
+    </div>
+  </div>
 
-      {activeSection === 'skills' && (
+  <div className="career-projects-container">
+    <div className="career-objective">
+      <h3>Career Objective</h3>
+      <div className="objective-box">
+        <div className="objective-item experience">
+          <h4>Experience</h4>
+          <p>{careerObjective.experience}</p>
+        </div>
+        <div className="objective-item expertise">
+          <h4>Expertise</h4>
+          <p>{careerObjective.expertise}</p>
+        </div>
+        <div className="objective-item goal">
+          <h4>Goal</h4>
+          <p>{careerObjective.goal}</p>
+        </div>
+        <div className="objective-item problem-solving">
+          <h4>Problem Solving</h4>
+          <p>{careerObjective.problemSolving}</p>
+        </div>
+      </div>
+    </div>
+
+    <div className="featured-projects">
+      <h3>Featured Projects</h3>
+      <ul>
+        {projects.map((project, index) => (
+          <li key={index}>{project}</li>
+        ))}
+      </ul>
+      {/* <button onClick={() => setActiveSection('portfolio')}>View all projects →</button> */}
+    </div>
+  </div>
+</section>
+
+)}
+
+      {/* {activeSection === 'skills' && (
         <section className="skills-section">
           <h3>Professional Skills</h3>
           <div className="skills-grid">
@@ -134,7 +201,58 @@ const PortfolioApp = () => {
             ))}
           </div>
         </section>
-      )}
+      )} */}
+{activeSection === 'skills' && (
+  <section className="skills-section">
+    <h2>Professional Skills</h2>
+
+    <div className="skills-category">
+      <h3>GIS Tools</h3>
+      <div className="skills-tags">
+        {skills.gisTools.map(skill => <span key={skill} className="tag gis">{skill}</span>)}
+      </div>
+    </div>
+
+    <div className="skills-category">
+      <h3>Programming</h3>
+      <div className="skills-tags">
+        {skills.programming.map(skill => <span key={skill} className="tag programming">{skill}</span>)}
+      </div>
+    </div>
+
+    <div className="skills-category">
+      <h3>GeoAI</h3>
+      <div className="skills-tags">
+        {skills.geoAI.map(skill => <span key={skill} className="tag geoai">{skill}</span>)}
+      </div>
+    </div>
+
+    <div className="skills-category">
+      <h3>Utility Networks</h3>
+      <div className="skills-tags">
+        {skills.utilityNetworks.map(skill => <span key={skill} className="tag utility">{skill}</span>)}
+      </div>
+    </div>
+
+    <div className="skills-category">
+      <h3>Database</h3>
+      <div className="skills-tags">
+        {skills.database.map(skill => <span key={skill} className="tag database">{skill}</span>)}
+      </div>
+    </div>
+
+    <div className="certifications">
+      <h3>Certifications</h3>
+      <ul>
+        <li>Do It Yourself Geo Apps</li>
+        <li>Earth Imagery at Work</li>
+        <li>Going Places with Spatial Analysis</li>
+        <li>Cartography</li>
+        <li>Spatial Data Science: The New Frontier in Analytics</li>
+      </ul>
+    </div>
+  </section>
+)}
 
       {activeSection === 'experience' && (
         <section className="experience-section">
