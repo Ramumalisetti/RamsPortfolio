@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/RamsPortfolio/static/css/main.a2504fa4.css",
-    "main.js": "/RamsPortfolio/static/js/main.e60ed108.js",
-    "static/media/world-map.jpg": "/RamsPortfolio/static/media/world-map.b204ee9fd43f0ba77a8d.jpg",
+    "main.css": "/RamsPortfolio/static/css/main.af6a9c98.css",
+    "main.js": "/RamsPortfolio/static/js/main.a4eb77c6.js",
+    "static/media/world-map.jpg": "/RamsPortfolio/static/media/world-map.8960b82bfac11ca21c10.jpg",
     "index.html": "/RamsPortfolio/index.html",
-    "main.a2504fa4.css.map": "/RamsPortfolio/static/css/main.a2504fa4.css.map",
-    "main.e60ed108.js.map": "/RamsPortfolio/static/js/main.e60ed108.js.map"
+    "main.af6a9c98.css.map": "/RamsPortfolio/static/css/main.af6a9c98.css.map",
+    "main.a4eb77c6.js.map": "/RamsPortfolio/static/js/main.a4eb77c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2504fa4.css",
-    "static/js/main.e60ed108.js"
+    "static/css/main.af6a9c98.css",
+    "static/js/main.a4eb77c6.js"
   ]
 }
