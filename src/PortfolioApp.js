@@ -53,7 +53,7 @@ const PortfolioApp = () => {
   const skills = {
     gisTools: ["ArcGIS Pro", "Enterprise", "Online", "Model Builder", "Revit", "FME", "AutoCAD", "ArcFM", "BIM", "QGIS", "Power-BI", "SQL Queries"],
     programming: ["Python for GIS automation", "geoprocessing", "data analysis", "workflow optimization"],
-    geoAI: ["AI and machine learning", "land-use classification", "feature extraction", "predictive modeling"],
+    geoAI: ["feature extraction","Building extraction", "land-use classification",  "predictive modeling"],
     utilityNetworks: ["Managing electrical and gas networks", "feeder tracing", "ArcFM configurations"],
     database: ["SQL Server", "Oracle"]
   };
