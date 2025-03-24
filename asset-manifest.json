@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/RamsPortfolio/static/css/main.a2504fa4.css",
-    "main.js": "/RamsPortfolio/static/js/main.29206793.js",
+    "main.js": "/RamsPortfolio/static/js/main.e60ed108.js",
     "static/media/world-map.jpg": "/RamsPortfolio/static/media/world-map.b204ee9fd43f0ba77a8d.jpg",
     "index.html": "/RamsPortfolio/index.html",
     "main.a2504fa4.css.map": "/RamsPortfolio/static/css/main.a2504fa4.css.map",
-    "main.29206793.js.map": "/RamsPortfolio/static/js/main.29206793.js.map"
+    "main.e60ed108.js.map": "/RamsPortfolio/static/js/main.e60ed108.js.map"
   },
   "entrypoints": [
     "static/css/main.a2504fa4.css",
-    "static/js/main.29206793.js"
+    "static/js/main.e60ed108.js"
   ]
 }
