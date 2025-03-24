@@ -88,7 +88,7 @@ const PortfolioApp = () => {
   return (
     <div className="portfolio-container">
       <header>
-        <h1>GIS Specialist & Tech Lead Portfolio</h1>
+        <h1>GIS Specialist | Tech Lead Portfolio</h1>
         <nav>
           {['home', 'skills', 'experience', 'education', 'portfolio'].map(section => (
             <button
